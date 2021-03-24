@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" integrity="sha512-pn4RwKFKdSvaTRSYO5WIUGz89e1tJvWWUGRIBym1/k467SuMMjKKw/X5TXJYp2+WLmHumHivCJ2JAJppXF9SoA==" crossorigin="anonymous" />
+</head>
+<body>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+
+    body{
+      font-family: sans-serif;
+
+    }
+    h1,h2,h3,h4,h5,h6{
+      font-family: sans-serif;
+
+    }
+    header{
+      background-image: url("/images/banner.jpg");
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    }
+    .navbar{
+      padding: 1% 15%;
+      background-color: rgba(0,0,0,0.3);
+    
+    }
+    .navbar-icon{
+      color: white;
+    }
+    .navbar-brand img{
+      width: 60px;
+      height: auto;
+
+    }
+    .nav-link{
+      color: white;
+      margin: 10px;
+      border-radius: 5px;
+      transition: 4s;
+      
+      
+    }
+    . .nav-link: :hover{
+     background:#2980b9;
+     color: white;
+     transform: scale(1.1)
+   
+    
+    
+    }
+    .banner-container{
+      height: 100vh;
+  
+    }
+    .banner-container{
+      font-size: 3.5rem;
+      padding: 10px 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-radius: 5px;
+    
+      
+     
+    }
+    .container ul li ul{
+      position:relative;
+      background: black;
+      left: -999px;
+
+    }
+    .container ul li:hover ul{
+      left: 10px;
+      text-emphasis-color: pink;
+     
+
+    }
+    .container ul li ul li{
+      width: 20px;
+      border-bottom: 1px solid rosybrown ;
+    }
+    .column{
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+   @media screen and (max-width: 992px;){
+     .column{
+       float: left;
+       width: 50px;
+       
+     }
+   }
+   @media screen and (max-width: 600px;){
+     .column{
+       
+       width: 100px;
+       
+     }
+   }
+
+  </style>
+
+  <div class="container">
+
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span> <i class="fas fa-bars navbar-icon"></i></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+
+          <img src="http://www.studywithanis.com/wp-content/uploads/2017/01/logo.png" alt="logo">
+        </a>
+
+
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto   fixed:top">
+            <li class="nav-item active">
+              <a class="nav-link text-center text-md-left" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-md-left" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-md-left" href="#">feedback</a>
+
+
+
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-secondary text-md-left" href="#"> Gallery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-secondary text-md-left" href= "#">  Feed</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-center text-secondary text-md-left" href="#">Faq</a>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-secondary text-md-left" href="#">contact</a>
+                  </li>
+             
+              
+              </ul>
+            
+            
+            
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-md-left" href="#">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center text-md-left" href="#">about me</a>
+            </li>
+           
+           
+          </ul>
+        </div>
+      </nav>
+
+      <section id="banner">
+        <div class="banner-container d-flex justify-content-center align-items-center">
+              <div class="banner-contents text-center">
+                <h1 class="font-weight-bolder text-success mb-5 ">Learn something new !!!</h1>
+                <button class="btn btn-lg btn-primary mr-3" onclick="window.open('https://www.jagonews24.com/bangladesh/dhaka/gazipur')" class="request-callback"> <i class="fas fa-play mr-2"></i>   tutorials</button>
+                <button class="btn btn-lg btn-primary mr-3" onclick="window.open('https://www.linkedin.com/')" class="request-callback"> <i class="fas fa- mr-2"></i>subtance</button>
+              </div>
+
+        </div>
+
+      </section>
+      
+  </div>
+  <style>
+    #feature{
+      padding: 5% 10%;
+      background: #e8ded2;
+    }
+    .feature-col{
+      border: 1px solid #ff02c0;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 20px 0;
+      transition: 4s;
+
+    }
+    .feature-col:hover{
+      transform: scale(1.1);
+      box-shadow: 2px 6px 5px black;
+    }
+    .icon-style{
+      background-color: sandybrown;
+      color: white;
+      padding: 15px;
+      margin: 5px 0;
+
+    }
+  </style>
+
+                  <section id="feature" class="text-center">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="feature-col">
+                          <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                          <h5 class="font-weight-bold">Free to use</h5>
+                          <p class="small ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eos veritatis iure, qui ad eaque quia natus?</p>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="feature-col">
+                        <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                        <h5 class="font-weight-bold">Free to use</h5>
+                        <p class="small ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eos veritatis iure, qui ad eaque quia natus?</p>
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="feature-col">
+                        <i class="fas fa-hand-holding-usd fa-3x icon-style rounded-circle"></i>
+                        <h5 class="font-weight-bold">Free to use</h5>
+                        <p class="small ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eos veritatis iure, qui ad eaque quia natus?</p>
+
+                      </div>
+
+                    </div>
+
+                  </section>
+
+
+
+
+
+       
+
+     
+       
+        
+
+          <div class="container">
+            <div class="title text-center-mr-3 ">
+          
+              <h3 class="font-weigth-bolder bg-primary   text-center ">service</h3>
+  
+            </div>
+            <div class="row text-center  text-md-center">
+              <div class="col-lg-3 col-md-6  rounded-bottom">
+                <i class=" bg-primary text-white rounded-circle mb-3 p-2  fa-3x  fas fa-hands-helping"></i>
+                <h4 class="text-uppercase " >web Desigining</h4>
+            <p class="small text-muted text-center" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad minima consectetur quas maxime, incidunt praesentium quibusdam laborum autem perspiciatis velit aperiam aspernatur unde fuga inventore tempore commodi ipsam explicabo.</p>
+              </div>
+
+             
+              <div class="row text-center text-md-center">
+                <div class="col-lg-3 col-md-6 ">
+                  <i class=" bg-primary text-white rounded-circle mb-3 p-2  fa-3x  fas fa-hands-helping"></i>
+                  <h4 class="text-uppercase text-center" >web Desigining</h4>
+              <p class="small text-muted text-center" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad minima consectetur quas maxime, incidunt praesentium quibusdam laborum autem perspiciatis velit aperiam aspernatur unde fuga inventore tempore commodi ipsam explicabo.</p>
+                </div>
+
+                <div class="row text-center text-md-center">
+                    <div class="col-lg-3 col-md-6 ">
+                      <i class=" bg-primary text-white rounded-circle mb-3 p-2  fa-3x  fas fa-hands-helping"></i>
+                      <h4 class="text-uppercase text-center" >web Desigining</h4>
+                  <p class="small text-muted text-center" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad minima consectetur quas maxime, incidunt praesentium quibusdam laborum autem perspiciatis velit aperiam aspernatur unde fuga inventore tempore commodi ipsam explicabo.</p>
+                    </div>
+
+                    <div class="row text-center text-md-center">
+                        <div class="col-lg-3 col-md-6 ">
+                          <i class=" bg-primary text-white rounded-circle mb-3 p-2  fa-3x  fas fa-hands-helping"></i>
+                          <h4 class="text-uppercase text-center" >web Desigining</h4>
+                      <p class="small text-muted text-center" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ad minima consectetur quas maxime, incidunt praesentium quibusdam laborum autem perspiciatis velit aperiam aspernatur unde fuga inventore tempore commodi ipsam explicabo.</p>
+                        </div>
+         
+
+        
+        <main>
+
+            <div class="about-section">
+                <div class="jumbotron pt-2">
+                 <div class="title text-center-mb-3">
+                   <h3 class="font-weigth-bolder text-center align-text-bottom">about me</h3>
+ 
+                 </div>
+ 
+                 <div class="row">
+                   <div class="col-lg-4 text-center">
+                     <img class="rounded-circle" src="../images/shagor.jpg" width="300" height="200">
+                     
+                   </div>
+ 
+                   <div class="col-lg-8">
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore reprehenderit, optio fugiat quaerat odio velit.</p>
+ 
+ 
+                     <a href="#demo" data-toggle="collapse">learn more</a>
+ 
+                     <div id="demo" class="collapse">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda est hic? A eaque cum aspernatur, corporis deleniti pariatur culpa! Repellendus in magni perferendis nostrum culpa provident quaerat saepe sapiente.</p>
+ 
+                     </div>
+
+                     <div class="alert alert-success data-dismissible">
+
+                        <button class="close" data-dismiss="alert" > &times;</button>
+                        Have you visited my chennel <a href="#">visot here</a>
+    
+    
+    
+                      </div>
+
+                      <div class="alert alert-success data-dismissible">
+
+                        <button class="close" data-dismiss="alert" > &times;</button>
+                        Have you visited my chennel <a href="#">visot here</a>
+    
+    
+    
+                      </div>
+
+                      <div class="btn-group">
+                        <button class="btn btn-outline-primary mb-2"> CD download</button>
+                        <button class="btn btn-outline-primary mb-3 ">cd download</button>
+                        <a href="#" class="btn btn-outline-primary " onclick="window.open('https://www.facebook.com/')" class="request-callback">visit my facebook</a>
+                       
+          
+                 
+          
+                    </div>
+
+                    <br>
+                    <br>
+          
+
+
+
+
+                      <div class="customer-review bg-light">
+                        <div class="title text-center-mb-3">
+                          <h3 class="font-weigth-bolder text-center bg-success text-bottom">customer-review </h3>
+              
+                        </div>
+              
+                        <div class="row">
+                          <div class="col-lg-4">
+                         
+                            <blockquote class="blockqute">
+                              
+
+                              <i class=" bg-success text-white rounded-circle mb-3 p-2 fa-3x  fas fa-user-circle"></i>
+
+                     
+                              
+                               <h3>customer</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem, vel magnam vero possimus provident excepturi quos veniam cum animi. in this website we can larning<abbr title="bootstrap4"> bs4 </abbr></p>
+                              <footer class="blockquote-footer">
+                                nasir uddin in <cite>youtuber</cite>
+                              </footer>
+                            </blockquote>
+                          </div>
+              
+              
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                              <blockquote class="blockqute">
+                                <i class=" bg-success text-white rounded-circle mb-3 p-2 fa-3x  fas fa-user-circle"></i>
+                              
+                                  <h3>customer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem, vel magnam vero possimus provident excepturi quos veniam cum animi. in this website we can larning<abbr title="bootstrap4"> bs4 </abbr></p>
+                                <footer class="blockquote-footer">
+                                  nasir uddin in <cite>youtuber</cite>
+                                </footer>
+                              </blockquote>
+                            </div>
+                
+                
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <blockquote class="blockqute">
+                                <i class=" bg-success text-white rounded-circle mb-3 p-2 fa-3x  fas fa-user-circle"></i>
+                              
+                                  <h3>customer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem, vel magnam vero possimus provident excepturi quos veniam cum animi. in this website we can larning<abbr title="bootstrap4"> bs4 </abbr></p>
+                                <footer class="blockquote-footer">
+                                  nasir uddin in <cite>youtuber</cite>
+                                </footer>
+                              </blockquote>
+                            </div>
+                
+                
+                          </div>
+
+                          <div class="other-section">
+                          <ul class="nav nav-pills">
+
+                            <li class="nav-item  active"><a data-toggle="pill"   class="nav-link" href="#edu">Education</a></li>
+                            <li class="nav-item "><a data-toggle="pill"  class="nav-link" href="#skill">skill</a></li>
+                            <li class="nav-item "><a data-toggle="pill" class="nav-link" href="#hobby">hobby</a></li>
+                              
+
+                              
+
+
+                        
+                          </ul>
+                          <div class="tab-content">
+
+                            <div id="edu" class=" tab-pane active"><p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo at quo autem, necessitatibus ipsum ipsam nobis. Maiores veniam totam quos, ipsum hic cupiditate eum quam sit recusandae explicabo. Aspernatur corrupti earum quos quasi, nobis magnam.</p></div>
+                            <div id="skill" class="tab-pane fade"><p>2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo at quo autem, necessitatibus ipsum ipsam nobis. Maiores veniam totam quos, ipsum hic cupiditate eum quam sit recusandae explicabo. Aspernatur corrupti earum quos quasi, nobis magnam.</p></div>
+                            <div id="hobby" class="tab-pane fade"><p>3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo at quo autem, necessitatibus ipsum ipsam nobis. Maiores veniam totam quos, ipsum hic cupiditate eum quam sit recusandae explicabo. Aspernatur corrupti earum quos quasi, nobis magnam.</p></div>
+
+                          </div>
+
+                        
+
+                          </div>
+
+                          <div class="about-section">
+                            <div class="title text-center-mb-3">
+                              <h3 class="font-weigth-bolder text-center bg-secondary text-bottom">linking coustom</h3>
+                  
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-8">
+                                <div class="card">
+                                  <img class="card-img-top rounded-circle" src="https://st3.depositphotos.com/12985848/19523/i/600/depositphotos_195230158-stock-photo-toned-picture-silhouette-hacker-hoodie.jpg" alt="card-images">
+                                  <div class="card-body">
+                                    
+
+
+                                 
+                                 
+                                    <h4 class="card-linking text-success border-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, </h4>
+
+                                    <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very</p>
+
+
+                                    <a class="card-link  stretched-link" href="https://www.studylink.govt.nz/" target="_blank">lorn for playlist</a>
+                                    <!-- <a href="#" class="btn btn-outline-primary " onclick="window.open('https://www.facebook.com/')" class="request-callback">visit my facebook</a> -->
+
+                                   <a href="#" class="cars-link" onclick="window.open('jn')" class="request-callback"></a>
+      
+                                  </div>
+
+                                  </div>
+
+
+                                </div>
+
+                              </div>
+                              
+
+                            </div>
+
+        
+
+                          
+
+                          </div>
+                       
+                        
+
+
+
+
+
+          
+           
+    
+            
+        </main>
+        <footer>
+          <style>
+            .container ul li a{
+              background-color: grey;
+              box-shadow: 0 3px solid ;
+              
+            }
+          </style>
+                      <div class="footer-top">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12 seqment-one">
+                              <h3>Divinector</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit voluptates suscipit.</p>
+
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 seqment-two">
+                              <h2>Divinector</h2>
+                              <ul class="nav " >
+                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                <li  class="nav-item" ><a  class="nav-link" href="#">Hosting</a></li>
+                                <li  class="nav-item"><a  class="nav-link"  href="#">Suppert</a></li>
+                                <li  class="nav-item" ><a  class="nav-link"  href="Hey, this is my homepage, so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I hope that my impression about myself and your impression about me are not so different. Here it goes.
+
+                                  I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.">About</a></li>
+                              </ul>
+
+                          </div>
+                          <div class="col-md-3 col-sm-6 col-xs-12 seqment-three">
+                            <h2>Follow Us</h2>
+                            <p class="text-black bold">please Follow us on our socaial media profile in order to keep update. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nemo!</p>
+
+                            <ul class="nav text-center">
+                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" target="_blank"><i class="bg-primary text-white rounded-circle mb-3 p-2 fa-1x fab fa-facebook-square"></i></a></li>
+                            <li  class="nav-item"><a class="nav-link" href="https://twitter.com/login?lang=en" target="_blank"><i class=" bg-primary text-white rounded-circle mb-3 p-2 fa-1x fab fa-twitter"></i></a></li>
+                            <li  class="nav-item"><a  class="nav-link" href="https://twitter.com/login?lang=en" target="_blank"><i class="bg-primary text-white rounded-circle mb-3 p-2 fa-1x fab fa-invision"></i></a></li>
+                            <li  class="nav-item"><a  class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="bg-primary text-white rounded-circle mb-3 p-2 fa-1x fab fa-instagram"></i></a></li>
+                                 
+                        
+                            </ul>
+                                 
+                                 
+                          </div>
+
+                          <div class="col-md-3 col-sm-6 col-xs-12 seqment-four">
+                            <h2>Divinector</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit voluptates suscipit.</p>
+
+                            <form action="">
+                              <input class="bg-secondry" type="email">
+                              <input class="bg-primary text-white" type="submit" value="submit">
+
+                            </form>
+
+                          </div>
+
+                          </div>
+
+                        </div>
+                        
+                      </div>
+            
+             
+
+     
+        
+
+ 
+
+        
+
+                
+
+        </footer>
+    </header>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> 
+    
+    
+</body>
+</html>
